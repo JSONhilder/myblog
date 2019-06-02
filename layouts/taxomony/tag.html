@@ -1,0 +1,10 @@
+<!-- Creates a list of all blogs with tags/taxonomies -->
+<div class="tag-list">
+<ul>
+        {{ range .Data.Pages }}
+          <li>
+            <a href="{{.RelPermalink}}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+</div>      

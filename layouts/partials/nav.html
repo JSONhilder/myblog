@@ -1,0 +1,13 @@
+<!-- Imports all the urls for the menu from a range within the config file -->
+
+<div class="nav-container">
+<div class="topnav" id="myTopnav">
+ 
+      {{ range .Site.Menus.mainmenu }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+ 
+</div>
+</div>
+

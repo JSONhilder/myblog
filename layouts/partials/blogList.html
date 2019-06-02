@@ -1,0 +1,35 @@
+{{partial "nav" .}}
+<br>
+<br>
+<div class="blog-items">
+
+{{ range .Paginator.Pages }}
+    <div class="blog-list-containers">
+    <div class="icon">
+        {{ if .Params.Image }}
+        <img src="{{.Params.image |absURL}}" alt=""> <!-- Needs to be styled-->
+        {{end}}
+        </div>
+            
+        <div class="content"> 
+                <div class="title">{{.Title}} <span class="blog-date">{{ dateFormat "2-01-2006" .Date }}</span></div>
+                <div class="rounded">
+                    
+                </div>
+                {{ partial "postTags" . }}
+    
+                <p>
+                {{ .Params.Description }} 
+                <!-- add truncate for responsive view-->
+                </p>
+                <button class="button" onclick='window.location.href = "{{ .Permalink }}" '> Read More</button>
+                </div>
+     
+    </div>
+    {{ end }} 
+    {{ partial "pagination" . }}
+    </div>
+        
+
+
+        

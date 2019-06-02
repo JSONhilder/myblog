@@ -1,0 +1,2 @@
+To populate directory in git repo so hugo will build without failing
+

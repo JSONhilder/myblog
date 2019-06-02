@@ -1,0 +1,37 @@
+<!-- This baseof file acts as the outline for the entire site so that the head section will be on every page eg-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Favicon -->  
+        <link rel="shortcut icon" href='{{ "favicon.ico" | absURL}}' />
+        <link rel="canonical" href="{{ .Permalink }}" />
+        
+
+        {{"<!-- Stylesheets-->" | safeHTML }}
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href='{{"css/styles.css" | absURL }}'>
+        <link rel="stylesheet" href='{{"css/syntax.css" | absURL }}'>
+        <!-- Load Javascript -->
+        <script src='{{"js/hamburg.js" | absURL }}'></script>
+
+        <!-- for the style sheets to work on all urls they must be linked like above -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+        <title>{{.Site.Params.title}}</title>
+</head>
+<body>
+    {{block "main" .}}
+    <!-- When we define main in our other pages it will be inserted into main (block)-->
+    {{end}}
+</body>
+
+    {{ partial "footer" . }}
+
+</html>
