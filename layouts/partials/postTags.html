@@ -3,11 +3,11 @@
     {{ with .Param $taxonomy }}
     <ul>
         <i class="fas fa-tags"></i>
-        {{ range $index, $tags := . }}
-        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tags) -}}
-       
+        {{ range $index, $tag := . }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+
     <li>
-        <a href="{{ .Permalink }}">{{ $tags | urlize }}</a>
+        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
     </li>
     {{- end -}}
     {{- end -}}
