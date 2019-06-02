@@ -44,3 +44,6 @@ paginate = 4
   name = "All Blogs"
   url = "/blog"
   weight = 3
+
+  [taxonomies]
+  tag = "tags"

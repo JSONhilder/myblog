@@ -1,16 +1,9 @@
 <div class="post-tags"><!-- Display Tags for post -->
-    {{ $taxonomy := "tags" }}
-    {{ with .Param $taxonomy }}
     <ul>
         <i class="fas fa-tags"></i>
-        {{ range $index, $tag := . }}
-        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+        {{ range .Params.tags }}
+          <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>    
 
-    <li>
-        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
-    </li>
-    {{- end -}}
-    {{- end -}}
-    </ul>
-    {{ end }}
-    </div>
+</div>
