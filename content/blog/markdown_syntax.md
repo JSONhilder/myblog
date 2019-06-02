@@ -3,7 +3,7 @@ title: "Markdown_syntax"
 date: "2019-05-18"
 draft: false
 image: "imgs/blog2.jpg"
-tag: ["test"]
+tags: ["test"]
 type: "post"
 ---
 ---
