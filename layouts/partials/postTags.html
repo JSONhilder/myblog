@@ -2,7 +2,7 @@
     <ul>
         <i class="fas fa-tags"></i>
         {{ range .Params.tags }}
-          <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+          <li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
         {{ end }}
       </ul>    
 
