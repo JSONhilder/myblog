@@ -1,4 +1,4 @@
-baseURL = "https://jsonhilder.github.io"
+baseURL = "https://jsonhilder.github.io/"
 languageCode = "en-us"
 title = "Jason's Tech Blog"
 paginate = 4
