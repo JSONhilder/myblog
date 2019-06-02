@@ -1,10 +1,16 @@
-language: go
+sudo: required
 
-go:
-  - master # This uses automatically the latest version of go
+language: python
+
+git:
+  submodules: false
+
 
 install:
-  - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
+  - sudo pip install pygments
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  - rm -rf public || exit 0
 
 script:
   - hugo # This commands builds your website on travis
