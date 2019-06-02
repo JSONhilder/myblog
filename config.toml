@@ -1,10 +1,8 @@
 baseURL = "https://jsonhilder.github.io/"
 languageCode = "en-us"
-title = "Jason's Tech Blog"
+title = "JSON Tech Blog"
 paginate = 4
 
-#Notes for usage, to keep a minimal look there are no banners on post pages, but we can add images within the md blog,
-#best size or at least how the css has been designed is for ? x ?
 
 [params]
     profilePic = "imgs/profile.png" # for theme version
@@ -13,7 +11,6 @@ paginate = 4
     author = "Jason Hilder"
     authorAvatar = "imgs/author_sig.png"
     authorLocation = "Durban, RSA"
-    authorWebsite = "https://my-web-site.com"
     Description = "Personal Blog Site"
 
     #social handles
@@ -44,6 +41,3 @@ paginate = 4
   name = "All Blogs"
   url = "/blog"
   weight = 3
-
-  [taxonomies]
-  tag = "tags"
