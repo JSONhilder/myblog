@@ -965,3 +965,21 @@ footer{
     }
   }
   
+    /* blog list container size */
+    .blog-list-container {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    /* blog page text box size */
+    .post-text-box{
+        width: 100%;
+    }
+    /* about page text box size */
+    .about-text-box{
+        width: 100%;
+    }
+
+    .blog-items {
+        width: 100%;
+    }
