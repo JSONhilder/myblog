@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href='{{ "favicon.ico" | absURL}}' />
         <link rel="canonical" href="{{ .Permalink }}" />
         
+        {{ .Hugo.Generator }}
 
         {{"<!-- Stylesheets-->" | safeHTML }}
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
