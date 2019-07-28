@@ -94,8 +94,6 @@ So now create a file and name it .travis.yml copy the content below into this fi
         # This is the authentication which setup in the travis-ci dashboard
         email: #github email
         name: #github UserName
-        on:
-            branch: master
 
 All you need to do now is change the values of the file to fit your repo and github details and then push the file to the repo.
 
