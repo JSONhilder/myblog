@@ -298,7 +298,7 @@ ul {
 .post-text-box{
     background-color: rgba(37, 37, 37, 0.95);
     text-align: left;
-    width: 88%;
+    width: 85%;
     margin: auto;
     border-radius: 10px;
     margin-top: 1.5%;
@@ -343,7 +343,7 @@ ul {
     color: white;
     font-family: sans-serif;
     font-size: 30px;
-    margin-left: 5%;
+    margin-left: 3%;
     padding-top: 3%;
 }
 
@@ -658,7 +658,7 @@ footer{
 .about-text-box{
     background-color: rgba(37, 37, 37, 0.95);
     text-align: left;
-    width: 80%;
+    width: 85%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
@@ -680,6 +680,16 @@ footer{
     color: rgb(255, 255, 255);
     font-size: 17px;    
 }
+
+.about-text-box-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
 /** End **/
 /** End **/
 
@@ -963,8 +973,7 @@ footer{
         margin-top: 0%;
         margin-bottom: 4%;
     }
-  }
-  
+    
     /* blog list container size */
     .blog-list-container {
         width: 100%;
@@ -983,3 +992,7 @@ footer{
     .blog-items {
         width: 100%;
     }
+
+}
+  
+    
