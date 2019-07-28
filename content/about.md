@@ -7,21 +7,15 @@ type: "page"
 ---
 ***
 
-Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hey there! My name is Jason Hilder. Some people consider me quite the "nerd" but in truth I’m just captivated by technology, computers and combining the two in order to bring to life the quirky idea's I envision,
+which in turn has lead me on a challenging, yet rewarding journey of discovery and lots of learning.
 
-Hugo makes use of a variety of open source projects including:
+When I'm not huddled up in front of my computer, creating and learning new tech, you can either find me at the beach surfing with my father, at home illustrating, both digitally and good old fashion pen to paper, getting engulfed in a good book or out searching for Durban’s best craft beer and burger with my family.
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+As a newbie to the programming world, I created this site as a project and as a space to document my findings; what I learn and how I implement these newly acquired skills. I hope to turn it into it's own sort of compendium, as a reference for myself. I would like this site to prove useful for anyone new to this diverse era of tech and hopefully in time my blogs can help people of varying experience. Cheers!
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+As a side note I built this site with Hugo.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, 
-dependencies and databases.
+<img src="/imgs/gopher-hero.svg" width="200" >
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [Github](https://github.com/gohugoio "Hugo's Github repo").
+Its an open source static site generator, made to be extremelly fast and secure! If anyone reading is interested in it you can learn more and contribute on <a href="https://github.com/gohugoio">Github</a>
