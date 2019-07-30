@@ -10,7 +10,9 @@ type: "post"
 
 ## Prerequisites
 
-- git & ensure you have set up your SSH key here's a link to do so https://devmarketer.io/learn/set-ssh-key-github/
+- git on your pc and a GitHub account
+- github SSH key, here's a link to do so https://devmarketer.io/learn/set-ssh-key-github/
+- Hugo project ready to deploy
 
 
 Hugo is a nifty static site generator made to be very flexible and very fast, so much so that on their site they claim to be the **world's fastest framework** for building static websites! 
