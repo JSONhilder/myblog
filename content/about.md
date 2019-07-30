@@ -7,8 +7,7 @@ type: "page"
 ---
 ***
 
-Hey there! My name is Jason Hilder. Some people consider me quite the "nerd" but in truth I’m just captivated by technology, computers and combining the two in order to bring to life the quirky idea's I envision,
-which in turn has lead me on a challenging, yet rewarding journey of discovery and lots of learning.
+Hey there! My name is Jason Hilder, I'm a Web developer and aspiring software developer from Durban South Africa! Some people consider me quite the "nerd" but in truth I’m just captivated by technology, computers and combining the two in order to bring to life the quirky idea's I envision, which in turn has lead me on a challenging, yet rewarding journey of discovery and lots of learning.
 
 When I'm not huddled up in front of my computer, creating and learning new tech, you can either find me at the beach surfing with my father, at home illustrating, both digitally and good old fashion pen to paper, getting engulfed in a good book or out searching for Durban’s best craft beer and burger with my family.
 
