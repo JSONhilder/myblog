@@ -23,7 +23,7 @@ There are quite a few choices when trying to decide where to deploy/host your Dj
 
 So if you dont already have one, create an account with <a href="https://www.pythonanywhere.com/pricing/" target="_blank">**Pythonanywhere**</a> now if you want to follow this blog, it is completely free using the beginner account which is more than capable to host a small scale Django app!
 
-Since this is on <a href="https://www.djangoproject.com" target="_blank">**Django**</a> it would be useful to have a basic understanding of Django and its file system as settings, route paths and directorys of the project will be changed and if you do not know what those are it will be confusing.
+Since this is on <a href="https://www.djangoproject.com" target="_blank">**Django**</a> it would be useful to have a basic understanding of Django. As this guide changes some file system settings, route paths and directorys of the project  and if you do not know what those are it will be confusing.
 
 # Create The Database
 
@@ -80,10 +80,10 @@ The next slide will ask you to select a python webframe work, select the *"Manua
 
 After that just click next again and it will create the web app for you. You will now see a configuration page here we can set a lot o f parameters, directorys etc for our web app lets scroll down the page to the *virtualenv* section, here we will set our virtual environment we set up previously, in my case it was just myenv, type yours into the box and it will find the env with that name.
 
-Next in the configuration page in the code section on the "WSGI configuration file" in a new window and remove everything besides django section it should look something like so: 
+Next in the configuration page scroll to the code section and open  "WSGI configuration file" in a new window and remove everything besides django section it should look something like so: 
 
     # This file contains the WSGI configuration required to serve up your
-    # web application at http://jsonhilder.pythonanywhere.com/
+    # web application at http:/username.pythonanywhere.com/
     # It works by setting the variable 'application' to a WSGI handler of some
     # description.
     #
@@ -101,8 +101,23 @@ Next in the configuration page in the code section on the "WSGI configuration fi
     # live.
 
 
-
     # +++++++++++ DJANGO +++++++++++
-    # and your django details below!
+    # To use your own django app use code like this:
+    import os
+    import sys
 
-Then remove all the single # tags under the django section.
+    ## assuming your django settings file is at '/home/username/mysite/mysite/settings.py'
+    ## and your manage.py is is at '/home/username/mysite/manage.py'
+    path = '/home/username/Django_App'
+    if path not in sys.path:
+        sys.path.append(path)
+
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'app.settings'
+
+    ## then:
+    from django.core.wsgi import get_wsgi_application
+    application = get_wsgi_application()
+
+
+Above I have removed all the single # tags under the django section. The double ## represent the comments, so best to leave them as comments.
+
