@@ -1,7 +1,7 @@
 ---
 title: "Amazon EC2"
 date: "2019-09-05"
-draft: true
+draft: false
 image: "imgs/blog-4.png"
 description: "Steps to creating and setting up an Amazon EC2 instance."
 tags: [
