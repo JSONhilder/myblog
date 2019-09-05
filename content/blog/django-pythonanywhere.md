@@ -2,7 +2,7 @@
 title: "Django Pythonanywhere"
 date: "2019-08-05"
 draft: true
-image: "imgs/blog-4.png"
+image: "imgs/blog-5.png"
 description: "How to host a Django project on Pythonanywhere."
 tags: ["Django", "Web Dev", "Python"]
 type: "post"
@@ -15,7 +15,7 @@ type: "post"
 - Pythonanywhere account
 - Being familiar with the linux terminal will help but not needed.
 
-# Deploying a Django Project
+# Deploying A Django Project
 
 There are quite a few choices when trying to decide where to deploy/host your Django projects, <a href="https://www.heroku.com" target="_blank">**Heroku**</a>, <a href="https://aws.amazon.com/ec2/" target="_blank">**AWS EC2**</a>, <a href="https://www.linode.com/" target="_blank">**Linode**</a>, the list can go on but in this case I decided to use <a href="https://www.pythonanywhere.com/" target="_blank">**Pythonanywhere**</a> it's a virtual machine loaded with a full python environment already installed, where you can develope and host websites, code etc. Out of those four options above this is most likely the easiest and fastest to get up and running, I am planning on writing blogs to deploy on Heroku and AWS EC2 instances in the future.
 
