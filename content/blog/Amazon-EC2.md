@@ -95,5 +95,3 @@ and now we can connect with ssh like so:
     ssh -i "private-key-name.pem" ubuntu@ec2-18-130-188-129.eu-west-2.compute.amazonaws.com <- this will be the public DNS
 
 the ubuntu@ will be the operating system you selected and the public dns you can copy this from the field in the dashboard.
-
-
