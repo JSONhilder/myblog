@@ -1,6 +1,6 @@
 ---
 title: "Django Pythonanywhere"
-date: "2019-08-05"
+date: "2019-09-"
 draft: true
 image: "imgs/blog-5.png"
 description: "How to host a Django project on Pythonanywhere."
