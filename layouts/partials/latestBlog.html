@@ -1,25 +1,23 @@
 <div class="blog-item">
-    <div class="blog-list-container">
-            <div class="icon">
-                    {{ range first 1 (where .Data.Pages "Type" "post") }}
-                    {{ if .Params.Image }}
-                    <img src="{{.Params.image |absURL}}" alt="">
-                    {{end}}
-            </div>
+        <div class="blog-list-container">
+                <div class="icon">
+                        {{ range first 1 (where .Data.Pages "Type" "post") }}
+                        {{ if .Params.Image }}
+                        <img src="{{.Params.image |absURL}}" alt="">
+                        {{end}}
+                </div>
         
-            <div class="content">
-                <h1>Latest Blog</h1>
-                <div class="title">{{.Title}} <span class="blog-date">{{ dateFormat "2-01-2006" .Date }}</span></div>
-                <div class="rounded"></div>
-                {{ partial "postTags" . }}
-                
-                <p>
-                        {{ .Params.Description }} 
-                </p>
-                <button class="button" onclick='window.location.href = "{{ .Permalink }}" '> Read More</button>
-            </div>
-    
-    </div>
-    {{end}}
-
-    </div>
+                <div class="content">
+                        <h1>Latest Blog</h1>
+                        <div class="title">{{.Title}} <span class="blog-date">{{ dateFormat "2-01-2006" .Date }}</span></div>
+                        <div class="rounded"></div>
+                        {{ partial "postTags" . }}
+                        
+                        <p>
+                                {{ .Params.Description }} 
+                        </p>
+                        <button class="button" onclick='window.location.href = "{{ .Permalink }}" '> Read More</button>
+                </div>
+        </div>
+{{end}}
+</div>
